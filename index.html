@@ -4,72 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReportRater - Welcome</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="index.css">
+
 </head>
 <!-- 1st page-->
 <body>
+  
   <header>
     <h1>EvaluateEase</h1>
-    <nav>
-      <ul>
-        <li><a href="#evaluate">Evaluate report</a></li>
-        <li><a href="#reportsub">Reports submitted</a></li>
-        <li><a href="#GD">Grade Cards </a></li>
+    <nav class="header_options">
+      <ul id="header-ul">
+        <li><a href="https://evaluatereport.streamlit.app/">Evaluate report</a></li>
+        <li><a href="ReportsSubmitted.html">Reports submitted</a></li>
+        <li><a href="GradeCards.html">Grade Cards </a></li>
         <li><a href="#">Support</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+    <div class="header-right">
+      <div class="sign-in">Sign In</div>
+      <div class="header-right-btn">Get Started</div>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h2>Welcome to ReportRater - Your go-to destination for comprehensive evaluations!</h2>
-      <p>Whether you're seeking feedback on academic papers, business reports, or creative projects, our platform offers expert insights to propel your work to new heights. Our diverse community of reviewers provides constructive critiques, highlighting strengths and suggesting areas for improvement. With user-friendly tools and a collaborative environment, ReportRater fosters growth and excellence. Join us today to unlock the power of evaluation and elevate your success. Start your journey towards enhanced performance and polished outcomes with ReportRater.</p>
-      <a href="#evaluate">Evaluate your reports here</a>
+     <div>Evaluate <div id="hero-color-text">Accurate</div> Reports with AI in seconds</div>
     </section>
+    <div class="mild">
+      Unlock the power of evaluation and elevate your success with ReportRater - your comprehensive destination for expert insights!
+     </div>
   </main>
-
-  <footer>
-    <p>&copy; 2024 ReportRater</p>
-  </footer>
-
-
-
-<!--2nd page-->
-<section id="evaluate">
-    <title>EvaluateEase - Report Evaluation</title>
-    <body>
-        <main>
-          <section class="evaluation-result">
-            <h2>Report Evaluation</h2>
+  <div id="reviewSection">OUR REVIEWS</div>
+  <div id="reviews">
+    
+    <div>
+      <div id="bgMain">
+      <img src="./Images/dtline.png"/>
+      <img src="./Images/dtline.png"/>
+    </div>
+    
+      <div id="card-cont">
+      <div class="login-container">
+        <div class="profile-img"></div>
+        <h1>
+          Arucha Dutta
+        </h1>
+        <div class="description">
+          "Being a class teacher of 50+ students, I find this as an absolute win for anyone looking for Report Evaluation"
+        </div>
       
-            <div class="author-details">
-              <p>Name of the author:</p>
-              <textarea name="author-text" id="author-text" cols="30" rows="1" placeholder="Enter author name"></textarea>
-            </div>
+       <img id="star" src="./Images/5star.png"/>
+        
+      </div>
+      <div class="login-container">
+        <div class="profile-img"></div>
+        <h1>
+          Arucha Dutta
+        </h1>
+        <div class="description">
+          "What took me days, now takes just a few clicks. Now I can finally enjoy the time that my boss wants me to work off lol"
+        </div>
       
-            <div class="report-details">
-              <p>Report Topic:</p>
-              <textarea name="report-topic" id="report-topic" cols="60" rows="1" placeholder="Enter your report topic here"></textarea>
-              <p>Enter your report (in text format) on ferrari:</p>
-              <textarea name="report-text" id="report-text" cols="30" rows="10" placeholder="Enter your report text here"></textarea>
-            </div>
+       <img id="star" src="./Images/5star.png"/>
+        
+      </div>
+      <div class="login-container">
+        <div class="profile-img"></div>
+        <h1>
+          Arucha Dutta
+        </h1>
+        <div class="description">
+          "I was shocked to see the accuracy and results that EvaluateEase brings. Keep up the Good work!"
+        </div>
       
-            <div class="evaluation">
-              <button>Evaluate</button>
-              <p>Result:  <span id="result">PASS</span></p> <p>You have achieved A grade. Your score is O</p>
-            </div>
-          </section>
-        </main>
-      
-        <footer>
-          <p>&copy; 2024 EvaluateEase</p>
-        </footer>
-      </body>
-</section>
+       <img id="star" src="./Images/5star.png"/>
+        
+      </div>
+    </div>
+    </div>
+  </div>
 
-<!--Third page-->
+
+
+<!--Third page
 <section id="reportsub">
     <main>
         <section class="recent-topics">
@@ -106,69 +124,150 @@
         <p>&copy; 2024 EvaluateEase</p>
       </footer>
 </section>
+-->
+<div class="recentSection">
+  <h1 id="recentReportHead">Recent Reports</h1>
+    <div style="height: 20px"></div>
 
-<!--fourth page-->
-<section id="GD">
-    <main>
-        <section class="grade-cards">
-          <h2>Grade Cards</h2>
-    
-          <table>
-            <thead>
-              <tr>
-                <th>Ids</th>
-                <th>Author Name</th>
-                <th>Topics</th>
-                <th>Grades</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Soumi Ghosh</td>
-                <td>Ferrari Cars - Describe the uniqueness</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Ritik Singh</td>
-                <td>The Evolution of Car Design</td>
-                <td>B</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Abushree Hazra</td>
-                <td>Ferrari Cars - Describe the uniqueness</td>
-                <td>A</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Ram Sen</td>
-                <td>Impact of Hybrid Cars on Environment and Economy</td>
-                <td>C</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Shyam Roy</td>
-                <td>Sustainable Materials in Car Manufacturing:</td>
-                <td>F</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Sattwikee Ghosh</td>
-                <td>Sustainable Materials in Car Manufacturing:</td>
-                <td>B</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </main>
-    
-      <footer>
-        <p>&copy; 2024 EvaluateEase</p>
-      </footer>
-</section>
+    <div class="wiper">
+      <button class="wiper-button wiper-button__right">
+        <img src="./Images/SwiperLeft.png" alt="left" />
+      </button>
+      <div class="wiper-wrapper">
+        <ul class="wiper-track">
+          <li class="wiper-item active-swipe">
+            <div class="card">
+              <div class="cover item-a item-1">
+                <h1>Ferrari<br>Cars</h1>
+                <span class="price">Today</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item">
+            <div class="card">
+              <div class="cover item-a item-2">
+                <h1>Gender<br>Ratio</h1>
+                <span class="price">Yesterday</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item ">
+            <div class="card">
+              <div class="cover item-a item-3">
+                <h1>AI<br>or AR</h1>
+                <span class="price">Yesterday</span>
+                <div class="card-back">
+                  <a href="#">Add to cart</a>
+                  <a href="#">View detail</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item ">
+            <div class="card">
+              <div class="cover item-a item-4">
+                <h1>SUV<br>Surges</h1>
+                <span class="price">Yesterday</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item">
+            <div class="card">
+              <div class="cover item-a item-5">
+                <h1>Car<br>Designs</h1>
+                <span class="price">07/03</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item">
+            <div class="card">
+              <div class="cover item-a item-6">
+                <h1>Electric<br>Vehicles</h1>
+                <span class="price">06/03</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+        
+          <li class="wiper-item">
+            <div class="card">
+              <div class="cover item-a item-7">
+                <h1>Passing<br>Report</h1>
+                <span class="price">05/03</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+          <li class="wiper-item">
+            <div class="card">
+              <div class="cover item-a item-8">
+                <h1>Singles<br>vs Doubles</h1>
+                <span class="price">04/03</span>
+                <div class="card-back">
+                  <a href="#">About Author</a>
+                  <a href="#">View Report</a>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <button class="wiper-button wiper-button__left">
+        <img src="./Images/SwiperLeft.png" alt="right" />
+      </button>
+    </div>
+    <div style="height: 300px"></div>
+  </div>
+  <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
 
-<script src="main.js"></script>
+    </ul>
+    <p>&copy;2024 EvaluateEase | All Rights Reserved</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="typewriter.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
