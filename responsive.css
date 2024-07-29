@@ -1,0 +1,182 @@
+/* Media Queries for responsiveness (applied to the first page) */
+
+/* For screens smaller than 768px (portrait mobile phones) */
+@media (max-width: 767px) {
+    .evaluation {
+      padding: 15px; /* Adjust padding for smaller screens */
+      text-align: center; /* Center content on mobile */
+    }
+  
+    .evaluation button {
+      margin: 10px auto; /* Center button horizontally on mobile */
+      display: block; /* Display button on a new line */
+      width: 100%; /* Make button fill available width */
+    }
+  }
+  
+  /* For screens between 768px and 992px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add media query styles for tablets here (optional) */
+  }
+  
+  /* For screens larger than 992px (desktops) */
+  @media (min-width: 992px) {
+    .evaluation {
+      width: 60%; /* Constrain width for a cleaner layout on desktops (optional) */
+      margin: 0 auto; /* Center the section horizontally on desktops (optional) */
+    }
+  }
+
+  /* Media Queries for responsiveness (applied to the second page) */
+
+/* For screens smaller than 768px (portrait mobile phones) */
+@media (max-width: 767px) {
+    .report-container {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    #report-text {
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  
+    .result {
+      text-align: center; /* Center result text on mobile */
+      font-size: 16px; /* Adjust result text size */
+    }
+  }
+  
+  /* For screens between 768px and 992px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add media query styles for tablets here (optional) */
+  }
+  
+  /* For screens larger than 992px (desktops) */
+  @media (min-width: 992px) {
+    .report-container {
+      width: 60%; /* Constrain width for a cleaner layout on desktops (optional) */
+      margin: 0 auto; /* Center the section horizontally on desktops (optional) */
+    }
+  }
+
+  /* Media Queries for responsiveness (applied to the third page) */
+
+/* For screens smaller than 768px (portrait mobile phones) */
+@media (max-width: 767px) {
+    .recent-topics {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .topics-list {
+      /* Adjust list styles for mobile */
+      padding: 0;
+    }
+  
+    .topics-list li {
+      margin-bottom: 5px; /* Reduce spacing between topics on mobile */
+      font-size: 14px; /* Adjust font size for readability */
+    }
+  }
+  
+  /* For screens between 768px and 992px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add media query styles for tablets here (optional) */
+  }
+  
+  /* For screens larger than 992px (desktops) */
+  @media (min-width: 992px) {
+    .recent-topics {
+      width: 60%; /* Constrain width for a cleaner layout on desktops (optional) */
+      margin: 0 auto; /* Center the section horizontally on desktops (optional) */
+    }
+  }
+
+  /* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav a:hover {
+    color: #333;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* For screens smaller than 768px (portrait mobile phones) */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    nav {
+      flex-wrap: wrap; /* Wrap navigation items on smaller screens */
+    }
+  
+    nav li {
+      margin-right: 10px; /* Adjust spacing for smaller screens */
+    }
+  
+    .evaluation-result,
+    .recent-topics,
+    .grade-cards {
+      border-radius: 0; /* Remove rounded corners for simpler layout on mobile */
+    }
+  
+    .evaluation button {
+      padding: 8px 15px; /* Adjust button size for mobile */
+    }
+  
+    #search-topic {
+      font-size: 14px; /* Adjust search bar font size for mobile */
+    }
+  }
+  
+  /* For screens between 768px and 992px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Add media query styles for tablets here (optional) */
+  }
+  
+  /* For screens larger than 992px (desktops) */
+  @media (min-width: 992px) {
+    /* Add media query styles for desktops here (optional) */
+  }
+  
